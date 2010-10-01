@@ -10,7 +10,7 @@ properties {
 	$result_dir = "$build_dir\results"
 	$lib_dir = "$base_dir\lib"
 	$buildNumber = if ($env:build_number -ne $NULL) { $env:build_number } else { '2.0.9999.0' }
-	$config = "debug"
+	$config = "release"
 	$framework_dir = Get-FrameworkDirectory
 }
 

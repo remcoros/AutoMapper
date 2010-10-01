@@ -1,9 +1,10 @@
 using System.ComponentModel;
-using Castle.Core.Interceptor;
 
 namespace AutoMapper.Internal
 {
-    internal class NotifyPropertyBehaviorInterceptor : PropertyBehaviorInterceptor
+	using Castle.DynamicProxy;
+
+	internal class NotifyPropertyBehaviorInterceptor : PropertyBehaviorInterceptor
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using Castle.Core.Interceptor;
 
 namespace AutoMapper
 {
+	using Castle.DynamicProxy;
+
 	internal class PropertyBehaviorInterceptor : IInterceptor
 	{
 		private readonly IDictionary<string, object> _propertyValues = new Dictionary<string, object>();
